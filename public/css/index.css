@@ -1,0 +1,247 @@
+.productWraper{
+    width: 100%;
+    display: flex;
+    padding: 30px;
+}
+
+.productContainer{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 30px 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* Card product */
+.productCard{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    max-width:250px ;
+    margin: auto;
+    background-color: white;
+    box-shadow: 3px 4px 5px 5px rgba(0, 0, 0, 0.100);
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.productCard:hover{
+    background-color: rgb(243, 242, 242);
+    box-shadow: 3px 1px 5px 5px rgba(0, 0, 0, 0.100);
+}
+
+.imgContainer{
+    width: 100%;
+    overflow: hidden;
+    height: 130px;
+}
+
+.imgProduct{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center !important;
+}
+
+.textContainer{
+    padding: 15px;
+    height: 200px;
+    position: relative;
+}
+
+.textContainer h5{
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+}
+
+.textContainer p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.textContainer div {
+    background-color: rgb(24, 195, 24);
+    width: fit-content;
+    padding: 0px 15px;
+    font-weight: 500;
+    color: white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    position: absolute;
+    bottom: 15px;
+}
+
+
+/* Button */
+.btnControlContainer{
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+.btnAddProduct{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(65, 65, 251);
+    padding: 10px 30px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    box-shadow: 2px 3px 7px 5px rgba(0, 0, 0, 0.191);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    border: none;
+}
+
+.btnAddProduct:hover{
+    background-color: rgb(6, 6, 251);
+    box-shadow: 0px 1px 7px 5px rgba(0, 0, 0, 0.191);
+}
+
+/* Create product */
+
+.createProductContainer{
+    width: 75%;
+}
+
+.btnBack{
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.814);
+    box-shadow: 2px 3px 7px 5px rgba(0, 0, 0, 0.191);   
+}
+
+.btnBack:hover{
+    box-shadow: 0px 1px 7px 5px rgba(0, 0, 0, 0.191);
+    background-color: black;
+}
+
+.ellipsis{
+    z-index: 100;
+    position:absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.483);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.ellipsis:hover{
+    background-color: rgba(255, 255, 255, 0.766);
+}
+
+.actions{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    background-color: white;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 1px;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    /* display: none; */
+}
+
+.actions a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.actions a:hover{
+    background-color: rgba(255, 255, 0, 0.492);
+    color: rgb(53, 53, 53);
+}
+
+.actions button{
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.actions button:hover{
+    background-color: rgba(255, 0, 0, 0.485);
+    color: white;
+}

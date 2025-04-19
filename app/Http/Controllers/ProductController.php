@@ -43,11 +43,13 @@ class ProductController extends Controller
             'desc' => 'required|string',
         ]);
 
-        $product = Product::create([
-            'productName' => $request->productName,
-            'price' => $request->price,
-            'desc' => $request->desc,
-        ]);
+        // $product = Product::create([
+        //     'productName' => $request->productName,
+        //     'price' => $request->price,
+        //     'desc' => $request->desc,
+        // ]);
+
+        $product = Product::create($request->all());
 
         if ($request->hasFile('image')) {
             $imagePaths = [];
@@ -131,7 +133,7 @@ class ProductController extends Controller
             ImageProduct::where('idProduct', $id)->delete();
 
             foreach ($request->file('image') as $key => $image) {
-                $imagePaths[] = $image->store('imagePublic', 'public');
+                $imagePaths[] = $image->store('imageProduct', 'public');
             }
 
             foreach ($imagePaths as $key => $images) {
